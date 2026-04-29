@@ -1,0 +1,12 @@
+@layer states {
+    .is-hidden {
+        opacity: 0;
+        transform: scale(0.95) translateY(0.5rem);
+        pointer-events: none;
+    }
+
+    .is-visible {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
