@@ -1,0 +1,11 @@
+@layer layout {
+    .box--form {
+        padding-inline: var(--padding-inline-form);
+        padding-block: var(--padding-block-form);
+    }
+
+    .box--card {
+        padding-inline: var(--padding-inline-card);
+        padding-block: var(--padding-block-card);
+    }
+}

@@ -1,0 +1,23 @@
+@layer tokens {
+    :root {
+        --font-family-base: var(--overpass-family);
+
+        --fs-description-form: var(--font-size-5);
+        --lh-description-form: var(--line-height-4);
+
+        --fs-rating-option: var(--font-size-5);
+        --lh-rating-option: var(--line-height-6);
+        --ls-rating-option: var(--letter-spacing-5);
+
+        --fs-button-submit: var(--font-size-5);
+        --lh-button-submit: var(--line-height-6);
+        --ls-button-submit: var(--letter-spacing-5);
+
+        --fs-rating-pill: var(--font-size-5);
+        --lh-rating-pill: var(--line-height-4);
+
+        --fw-regular: var(--font-weight-400);
+        --fw-semibold: var(--font-weight-600);
+        --fw-bold: var(--font-weight-700);
+    }
+}

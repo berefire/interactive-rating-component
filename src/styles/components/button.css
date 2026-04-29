@@ -1,0 +1,14 @@
+@layer components {
+    .button {
+        padding-inline: var(--padding-inline-button);
+        padding-block: var(--padding-block-button);
+        background-color: var(--bg-button-submit);
+        border-radius: var(--radius-button-submit);
+        text-transform: uppercase;
+        font-size: var(--fs-button-submit);
+        line-height: var(--lh-button-submit);
+        letter-spacing: var(--ls-button-submit);
+        font-weight: var(--fw-bold);
+        color: var(--fc-button-submit);
+    }
+}

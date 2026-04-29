@@ -1,0 +1,23 @@
+@layer components {
+    .rating-options {
+        display: flex;
+        justify-content: space-between;
+        gap: var(--gap-rating-options);
+    }
+
+    .rating-option--visual {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-rating-option);
+        border-radius: var(--radius-rating-option);
+        block-size: var(--rating-option-size);
+        inline-size: var(--rating-option-size);
+        cursor: pointer;
+
+        font-size: var(--fs-rating-option);
+        line-height: var(--lh-rating-option);
+        letter-spacing: var(--ls-rating-option);
+        font-weight: var(--fw-bold);
+    }
+}

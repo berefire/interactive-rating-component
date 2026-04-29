@@ -1,0 +1,45 @@
+@layer components {
+    .card, .rating-form {
+        background: var(--bg-card);
+        border-radius: var(--radius-card);
+    }
+
+    .icon-circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-icon-circle);
+        inline-size: var(--icon-circle-size);
+        block-size: var(--icon-circle-size);
+        border-radius: var(--radius-icon-circle);
+    }
+
+    .title-form {
+        color: var(--fc-title);
+    }
+
+    .rating-description, .text-muted {
+        inline-size: 32ch;
+        font-size: var(--fs-description-form);
+        line-height: var(--lh-description-form);
+        font-weight: var(--fw-regular);
+    }
+
+    .thank-you-content {
+        text-align: center;
+    }
+
+    .rating-pill {
+        display: inline-flex;
+        gap: 0.0625em;
+        align-items: center;
+        justify-content: center;
+        font-size: var(--fs-rating-pill);
+        line-height: var(--lh-rating-pill);
+        color: var(--fc-text-rating-pill);
+        background-color: var(--bg-rating-pill);
+        border-radius: var(--radius-rating-pill);
+        block-size: var(--rating-pill-height);
+        padding-inline: var(--padding-inline-rating-pill);
+    }
+}

@@ -21,50 +21,59 @@
 
 <body>
   <main class="cover">
-    <h1 class="sr-only card">Interactive Rating Component</h1>
-    <section aria-labelledby="rating-title">
-      <form class="rating-form" novalidate>
+    <h1 class="sr-only">Interactive Rating Component</h1>
+    <section class="rating-form box--form hidden" aria-labelledby="rating-title">
+      <form class="cluster--form" novalidate>
         <!-- Rating state start -->
-        <img class="icon" src="/assets/images/icon-star.svg" alt="" aria-hidden="true">
+        <div class="icon-circle">
+          <img class="icon" src="/assets/images/icon-star.svg" alt="" aria-hidden="true">
+        </div>
 
-        <h2 id="rating-title" class>How did we do?</h2>
 
-        <p class="rating-description">Please let us know how we did with your support request. All feedback is
-          appreciated to help us improve our offering!</p>
 
-        <fieldset class="rating-group">
-          <legend class="sr-only">
-            Select a rating between 1 and 5.
-          </legend>
+        <div class="stack--text-form">
 
-          <div class="rating-options">
-            <label>
-              <input type="radio" name="rating" value="1">
-              <span class="rating-option--visual">1</span>
-            </label>
+          <h2 id="rating-title" class="title-form">How did we do?</h2>
 
-            <label>
-              <input type="radio" name="rating" value="2">
-              <span class="rating-option--visual">2</span>
-            </label>
+          <p class="rating-description">Please let us know how we did with your support request. All feedback is
+            appreciated to help us improve our offering!</p>
 
-            <label>
-              <input type="radio" name="rating" value="3">
-              <span class="rating-option--visual">3</span>
-            </label>
+          <fieldset class="rating-group">
+            <legend class="sr-only">
+              Select a rating between 1 and 5.
+            </legend>
 
-            <label>
-              <input type="radio" name="rating" value="4">
-              <span class="rating-option--visual">4</span>
-            </label>
+            <div class="rating-options">
+              <label>
+                <input type="radio" name="rating" value="1">
+                <span class="rating-option--visual">1</span>
+              </label>
 
-            <label>
-              <input type="radio" name="rating" value="5">
-              <span class="rating-option--visual">5</span>
-            </label>
-          </div>
+              <label>
+                <input type="radio" name="rating" value="2">
+                <span class="rating-option--visual">2</span>
+              </label>
 
-        </fieldset>
+              <label>
+                <input type="radio" name="rating" value="3">
+                <span class="rating-option--visual">3</span>
+              </label>
+
+              <label>
+                <input type="radio" name="rating" value="4">
+                <span class="rating-option--visual">4</span>
+              </label>
+
+              <label>
+                <input type="radio" name="rating" value="5">
+                <span class="rating-option--visual">5</span>
+              </label>
+            </div>
+
+          </fieldset>
+
+        </div>
+
 
         <button class="button" type="submit">
           Submit
@@ -75,19 +84,21 @@
 
     </section>
 
-    <section class="card thank-you" aria-labelledby="thank-you-title" aria-live="polite">
+    <section class="card thank-you box--card cluster--card" aria-labelledby="thank-you-title" aria-live="polite">
       <!-- Thank you state start -->
-      <img class="thank-you__image" src="/assets/images/illustration-thank-you.svg" alt="" aria-hidden="true">
+      <img class="thank-you__image" src="/assets/images/illustration-thank-you.svg" height="108" width="162" alt="" aria-hidden="true">
 
+      <p class="rating-pill">You selected <span id="selected-rating"></span> out of 5</p>
 
-      <h2 id="thank-you-title">Thank you!</h2>
+      <div class="thank-you-content stack--text-card">
+        <h2 id="thank-you-title">Thank you!</h2>
 
-      <p class="pill">You selected <span id="selected-rating"></span> out of 5</p>
+        <p class="text-muted">We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
 
-      <p class="text-muted">We appreciate you taking the time to give a rating. If you ever need more support,
-        don’t hesitate to get in touch!</p>
+        <!-- Thank you state end -->
+      </div>
 
-      <!-- Thank you state end -->
     </section>
 
 

@@ -1,0 +1,10 @@
+@layer layout {
+    .stack--text-form > * + * {
+        margin-block-start: var(--gap-form);
+
+    }
+
+    .stack--text-card > * + * {
+        margin-block-start: var(--stack-text-card);
+    }
+}

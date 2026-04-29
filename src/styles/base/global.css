@@ -1,0 +1,40 @@
+@layer base {
+  html {
+    font-family: var(--font-family-base);
+    color: var(--fc-text);
+    background-color: var(--bg-primary);
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html,
+  body {
+    min-block-size: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  button {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* Chrome, Safari, Edge */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  @supports (min-block-size: 100dvh) {
+    html,
+    body {
+      min-block-size: 100dvh;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    input {
+      transition: none;
+    }
+  }
+}

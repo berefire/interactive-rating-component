@@ -1,3 +1,5 @@
 @layer base;
 
 @import "@base/fonts.css";
+@import "@base/global.css";
+@import "@base/reset.css";

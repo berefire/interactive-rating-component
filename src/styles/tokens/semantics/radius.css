@@ -1,0 +1,10 @@
+@layer tokens {
+    :root {
+        --radius-card: calc( 15 / var(--base) * 1rem );
+        --radius-icon-circle: 50%;
+
+        --radius-rating-option: 50%;
+        --radius-button-submit: calc( 22.5 / var(--base) * 1rem );
+        --radius-rating-pill: calc( 22.5 / var(--base) * 1rem );
+    }
+}

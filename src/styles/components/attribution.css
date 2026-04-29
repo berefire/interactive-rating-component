@@ -2,6 +2,6 @@
     .attribution {
         font-size: clamp(0.6875em, 1vw, 0.8125em);
         text-align: center;
-        color: black;
+        color: var(--fc-text);
     }
 }

@@ -1,0 +1,8 @@
+@layer tokens {
+    :root {
+        --icon-circle-size: var(--sizing-40);
+
+        --rating-option-size: var(--sizing-42);
+        --rating-pill-height: var(--sizing-32);
+    }
+}

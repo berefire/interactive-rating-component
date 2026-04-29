@@ -1,0 +1,14 @@
+@layer layout {
+    .cluster--form {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-form);
+    }
+
+    .cluster--card {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gap-card);
+        align-items: center;
+    }
+}

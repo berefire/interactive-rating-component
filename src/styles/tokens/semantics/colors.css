@@ -1,0 +1,16 @@
+@layer tokens {
+    :root {
+        --bg-primary: var(--grey-950);
+        --bg-card: var(--gradient-1);
+        --bg-icon-circle: var(--grey-900);
+        --bg-rating-option: var(--grey-900);
+        --bg-button-submit: var(--orange);
+        --bg-rating-pill: var(--grey-900);
+
+        --fc-rating-pill: var(--orange);
+        --fc-title: var(--white);
+        --fc-text: var(--grey-500);
+        --fc-button-submit: var(--grey-950);
+        --fc-text-rating-pill: var(--orange);
+    }
+}

@@ -1,0 +1,19 @@
+@layer tokens {
+    :root {
+        --padding-inline-form: var(--spacing-300);
+        --padding-block-form: var(--spacing-300);
+        --gap-form: var(--spacing-300);
+        --gap-rating-options: var(--spacing-200);
+
+        --padding-inline-button: var(--spacing-1300);
+        --padding-block-button: var(--spacing-200);
+
+        --padding-inline-card: var(--spacing-300);
+        --padding-block-card: var(--spacing-400);
+        --padding-inline-rating-pill: var(--spacing-200);
+        --gap-card: var(--spacing-300);
+        --stack-text-card: var(--spacing-200);
+
+        --stack--text-form: var(--spacing-200);
+    }
+}
