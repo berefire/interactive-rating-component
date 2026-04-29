@@ -14,19 +14,33 @@
         border-radius: var(--radius-icon-circle);
     }
 
-    .title-form {
+    #rating-title {
+        font-size: var(--fs-title-form);
+        line-height: var(--lh-title-form);
+        font-weight: var(--fw-bold);
         color: var(--fc-title);
     }
 
-    .rating-description, .text-muted {
+    .rating-description {
         inline-size: 32ch;
         font-size: var(--fs-description-form);
         line-height: var(--lh-description-form);
         font-weight: var(--fw-regular);
     }
 
+    .text-muted {
+        inline-size: 32ch;
+        font-size: var(--fs-text-thank-you);
+        line-height: var(--lh-text-thank-you);
+    }
+
     .thank-you-content {
         text-align: center;
+    }
+
+    .thank-you__image {
+        block-size: var(--thank-you-image-block-size);
+        inline-size: var(--thank-you-image-inline-size);
     }
 
     .rating-pill {
@@ -41,5 +55,22 @@
         border-radius: var(--radius-rating-pill);
         block-size: var(--rating-pill-height);
         padding-inline: var(--padding-inline-rating-pill);
+    }
+
+    #thank-you-title {
+        font-size: var(--fs-thank-you-title);
+        line-height: var(--lh-thank-you-title);
+        font-weight: var(--fw-bold);
+        color: var(--fc-title);
+    }
+
+    @media(min-width: 48em) {
+        .rating-description {
+            inline-size: 35ch;
+        }
+
+        .text-muted {
+            inline-size: 35ch;
+        }
     }
 }

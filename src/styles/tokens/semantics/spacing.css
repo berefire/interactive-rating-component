@@ -16,4 +16,18 @@
 
         --stack--text-form: var(--spacing-200);
     }
+
+    @media(min-width: 48em){
+        :root {
+            --padding-block-form: var(--spacing-400);
+
+            --padding-inline-button: var(--spacing-1700);
+
+            --gap-rating-options: var(--spacing-300);
+
+            --gap-card: var(--spacing-400);
+            --padding-inline-card: var(--spacing-400);
+            --padding-block-card: var(--spacing-500);
+        }
+    }
 }

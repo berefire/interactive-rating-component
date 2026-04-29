@@ -1,8 +1,22 @@
 @layer tokens {
-    :root {
-        --icon-circle-size: var(--sizing-40);
+  :root {
+    --icon-circle-size: var(--sizing-40);
 
-        --rating-option-size: var(--sizing-42);
-        --rating-pill-height: var(--sizing-32);
+    --rating-option-size: var(--sizing-42);
+    --rating-pill-height: var(--sizing-32);
+
+    --thank-you-image-inline-size: var(--sizing-144);
+    --thank-you-image-block-size: var(--sizing-96);
+  }
+
+  @media (min-width: 48em) {
+    :root {
+      --icon-circle-size: var(--sizing-48);
+
+      --rating-option-size: var(--sizing-51);
+
+      --thank-you-image-inline-size: var(--sizing-162);
+      --thank-you-image-block-size: var(--sizing-108);
     }
+  }
 }

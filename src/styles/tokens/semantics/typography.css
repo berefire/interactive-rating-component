@@ -1,23 +1,59 @@
 @layer tokens {
+  :root {
+    --font-family-base: var(--overpass-family);
+
+    --fs-title-form: var(--font-size-2);
+    --lh-title-form: var(--line-height-2);
+
+    --fs-description-form: var(--font-size-5);
+    --lh-description-form: var(--line-height-4);
+
+    --fs-rating-option: var(--font-size-5);
+    --lh-rating-option: var(--line-height-6);
+    --ls-rating-option: var(--letter-spacing-5);
+
+    --fs-button-submit: var(--font-size-5);
+    --lh-button-submit: var(--line-height-6);
+    --ls-button-submit: var(--letter-spacing-5);
+
+    --fs-rating-pill: var(--font-size-5);
+    --lh-rating-pill: var(--line-height-4);
+
+    --fs-thank-you-title: var(--font-size-2);
+    --lh-thank-you-title: var(--line-height-2);
+
+    --fs-text-thank-you: var(--font-size-5);
+    --lh-text-thank-you: var(--line-height-4);
+
+    --fw-regular: var(--font-weight-400);
+    --fw-semibold: var(--font-weight-600);
+    --fw-bold: var(--font-weight-700);
+  }
+
+  @media (min-width: 48em) {
     :root {
-        --font-family-base: var(--overpass-family);
+      --fs-title-form: var(--font-size-1);
+      --lh-title-form: var(--line-height-1);
 
-        --fs-description-form: var(--font-size-5);
-        --lh-description-form: var(--line-height-4);
+      --fs-description-form: var(--font-size-4);
+      --lh-description-form: var(--line-height-3);
 
-        --fs-rating-option: var(--font-size-5);
-        --lh-rating-option: var(--line-height-6);
-        --ls-rating-option: var(--letter-spacing-5);
+      --fs-rating-option: var(--font-size-3);
+      --lh-rating-option: var(--line-height-3);
+      --ls-rating-option: var(--letter-spacing-3);
 
-        --fs-button-submit: var(--font-size-5);
-        --lh-button-submit: var(--line-height-6);
-        --ls-button-submit: var(--letter-spacing-5);
+      --fs-button-submit: var(--font-size-5);
+      --lh-button-submit: var(--line-height-3);
+      --ls-button-submit: var(--letter-spacing-6);
 
-        --fs-rating-pill: var(--font-size-5);
-        --lh-rating-pill: var(--line-height-4);
+      --fs-rating-pill: var(--font-size-4);
+      --lh-rating-pill: var(--line-height-3);
 
-        --fw-regular: var(--font-weight-400);
-        --fw-semibold: var(--font-weight-600);
-        --fw-bold: var(--font-weight-700);
+      --fs-thank-you-title: var(--font-size-1);
+      --lh-thank-you-title: var(--line-height-1);
+
+      --fs-text-thank-you: var(--font-size-4);
+      --lh-text-thank-you: var(--line-height-3);
     }
+  }
 }
