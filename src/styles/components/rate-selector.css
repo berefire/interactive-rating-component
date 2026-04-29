@@ -6,8 +6,8 @@
     }
 
     .rating-option--visual {
-        display: inline-flex;
-        align-items: center;
+        display: inline-grid;
+        align-content: center;
         justify-content: center;
         background-color: var(--bg-rating-option);
         border-radius: var(--radius-rating-option);

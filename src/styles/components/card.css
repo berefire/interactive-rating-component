@@ -5,8 +5,8 @@
     }
 
     .icon-circle {
-        display: flex;
-        align-items: center;
+        display: inline-grid;
+        align-content: center;
         justify-content: center;
         background-color: var(--bg-icon-circle);
         inline-size: var(--icon-circle-size);

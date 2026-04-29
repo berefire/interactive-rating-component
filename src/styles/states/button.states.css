@@ -1,0 +1,5 @@
+@layer states {
+    .button:hover {
+        background-color: var(--bg-button-submit-hover);
+    }
+}

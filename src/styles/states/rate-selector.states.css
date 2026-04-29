@@ -1,0 +1,11 @@
+@layer states {
+    .rating-input:checked + .rating-option--visual {
+        background-color: var(--bg-rating-option-checked);
+        color: var(--fc-text-rating-option-effect);
+    }
+
+    .rating-input:hover:not(:checked) + .rating-option--visual {
+        background-color: var(--bg-rating-option-hover);
+        color: var(--fc-text-rating-option-effect);
+    }
+}

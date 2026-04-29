@@ -5,12 +5,16 @@
         --bg-icon-circle: var(--grey-900);
         --bg-rating-option: var(--grey-900);
         --bg-button-submit: var(--orange);
+        --bg-button-submit-hover: var(--white);
         --bg-rating-pill: var(--grey-900);
+        --bg-rating-option-checked: var(--white);
+        --bg-rating-option-hover: var(--orange);
 
         --fc-rating-pill: var(--orange);
         --fc-title: var(--white);
         --fc-text: var(--grey-500);
         --fc-button-submit: var(--grey-950);
         --fc-text-rating-pill: var(--orange);
+        --fc-text-rating-option-effect: var(--grey-900);
     }
 }
