@@ -1,52 +1,105 @@
 <!DOCTYPE html>
 <html lang="en" translate="no">
+
 <head>
   <meta charset="UTF-8">
   <meta name="google" content="notranslate">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <meta name="author" content="Berefire">
-  <meta name="description" content="Interactive rating component challenge from Frontend Mentor. Built with HTML, CSS and JavaScript.">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="description"
+    content="Interactive rating component challenge from Frontend Mentor. Built with HTML, CSS and JavaScript.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+
   <title>Frontend Mentor | Interactive rating component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <script defer type="module" src="./src/js/main.js"></script>
+
 </head>
+
 <body>
+  <main class="cover">
+    <h1 class="sr-only card">Interactive Rating Component</h1>
+    <section aria-labelledby="rating-title">
+      <form class="rating-form" novalidate>
+        <!-- Rating state start -->
+        <img class="icon" src="/assets/images/icon-star.svg" alt="" aria-hidden="true">
 
-  <!-- Rating state start -->
+        <h2 id="rating-title" class>How did we do?</h2>
 
-  How did we do?
+        <p class="rating-description">Please let us know how we did with your support request. All feedback is
+          appreciated to help us improve our offering!</p>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
+        <fieldset class="rating-group">
+          <legend class="sr-only">
+            Select a rating between 1 and 5.
+          </legend>
 
-  1 2 3 4 5
+          <div class="rating-options">
+            <label>
+              <input type="radio" name="rating" value="1">
+              <span class="rating-option--visual">1</span>
+            </label>
 
-  Submit
+            <label>
+              <input type="radio" name="rating" value="2">
+              <span class="rating-option--visual">2</span>
+            </label>
 
-  <!-- Rating state end -->
+            <label>
+              <input type="radio" name="rating" value="3">
+              <span class="rating-option--visual">3</span>
+            </label>
 
-  <!-- Thank you state start -->
+            <label>
+              <input type="radio" name="rating" value="4">
+              <span class="rating-option--visual">4</span>
+            </label>
 
-  You selected <!-- Add rating here --> out of 5
+            <label>
+              <input type="radio" name="rating" value="5">
+              <span class="rating-option--visual">5</span>
+            </label>
+          </div>
 
-  Thank you!
+        </fieldset>
 
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+        <button class="button" type="submit">
+          Submit
+        </button>
 
-  <!-- Thank you state end -->
+        <!-- Rating state end -->
+      </form>
 
-  
+    </section>
+
+    <section class="card thank-you" aria-labelledby="thank-you-title" aria-live="polite">
+      <!-- Thank you state start -->
+      <img class="thank-you__image" src="/assets/images/illustration-thank-you.svg" alt="" aria-hidden="true">
+
+
+      <h2 id="thank-you-title">Thank you!</h2>
+
+      <p class="pill">You selected <span id="selected-rating"></span> out of 5</p>
+
+      <p class="text-muted">We appreciate you taking the time to give a rating. If you ever need more support,
+        don’t hesitate to get in touch!</p>
+
+      <!-- Thank you state end -->
+    </section>
+
+
+
+  </main>
   <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      rel="noopener noreferrer" aria-label="Frontend Mentor (opens in a new tab)">Frontend Mentor <span
+        aria-hidden="true" class="external-icon">🔗</span></a>.
+    Coded by <a class="link" target="_blank" rel="noopener noreferrer" aria-label="Author (opens in a new tab)"
+      href="#">Berefire</a>.
   </footer>
 </body>
+
 </html>
