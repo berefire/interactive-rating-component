@@ -69,7 +69,7 @@ Users should be able to:
 
 ### 🔗Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/accessible-interactive-rating-component-8oa-PMmG4_](https://www.frontendmentor.io/solutions/accessible-interactive-rating-component-8oa-PMmG4_)
 - Live Site URL: [https://berefire.github.io/interactive-rating-component/](https://berefire.github.io/interactive-rating-component/)
 
 ---
