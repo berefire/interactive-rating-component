@@ -23,10 +23,10 @@
   <main class="cover">
     <h1 class="sr-only">Interactive Rating Component</h1>
     <section class="rating-form box--form fade is-visible" aria-labelledby="rating-title">
-      <form class="cluster--form" novalidate>
+      <form class="cluster--form">
         <!-- Rating state start -->
         <div class="icon-circle">
-          <img class="icon" src="/assets/images/icon-star.svg" alt="" aria-hidden="true">
+          <img class="icon" src="/assets/images/icon-star.svg" height="16" width="17" aria-hidden="true">
         </div>
 
 
@@ -45,7 +45,7 @@
 
             <div class="rating-options">
               <label>
-                <input class="rating-input" type="radio" name="rating" value="1">
+                <input class="rating-input" type="radio" name="rating" value="1" required>
                 <span class="rating-option--visual">1</span>
               </label>
 
@@ -75,7 +75,7 @@
         </div>
 
 
-        <button class="button" type="submit">
+        <button class="button" type="submit" disabled>
           Submit
         </button>
 
@@ -84,11 +84,11 @@
 
     </section>
 
-    <section class="card thank-you box--card cluster--card fade is-hidden" aria-labelledby="thank-you-title" aria-live="polite">
+    <section class="card thank-you box--card cluster--card fade is-hidden" aria-labelledby="thank-you-title" aria-live="polite" hidden tabindex="-1">
       <!-- Thank you state start -->
       <img class="thank-you__image" src="/assets/images/illustration-thank-you.svg" height="96" width="144" alt="" aria-hidden="true">
 
-      <p class="rating-pill">You selected <span id="selected-rating"></span> out of 5</p>
+      <p class="rating-pill"><span id="selected-rating"></span></p>
 
       <div class="thank-you-content stack--text-card">
         <h2 id="thank-you-title">Thank you!</h2>

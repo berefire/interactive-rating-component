@@ -1,5 +1,10 @@
 @layer states {
-    .button:hover {
+    .button:is(:not(:disabled)) {
         background-color: var(--bg-button-submit-hover);
+    }
+
+    .button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
     }
 }
