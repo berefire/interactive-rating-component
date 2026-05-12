@@ -8,4 +8,9 @@
         background-color: var(--bg-rating-option-hover);
         color: var(--fc-text-rating-option-effect);
     }
+
+    .rating-input:focus-visible + .rating-option--visual {
+        outline: 0.125em solid var(--outline-rating-option-focus);
+        outline-offset: 0.125em;
+    }
 }

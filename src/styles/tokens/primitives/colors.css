@@ -8,6 +8,7 @@
         --grey-900: hsl(213, 19%, 18%);
         --grey-500: hsl(217, 12%, 63%);
         --orange: hsl(25, 97%, 53%);
+        --blue: hsl(213, 94%, 68%);
 
         --gradient-1: radial-gradient(circle at top, #232A34 0%, #181E27 100%)
     }

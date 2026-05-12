@@ -2,6 +2,6 @@
   .fade {
     transition:
       opacity 300ms ease,
-      transform 300ms ease,
+      transform 300ms ease;
   }
 }

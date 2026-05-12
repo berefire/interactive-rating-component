@@ -9,6 +9,7 @@
         --bg-rating-pill: var(--grey-900);
         --bg-rating-option-checked: var(--white);
         --bg-rating-option-hover: var(--orange);
+        --outline-rating-option-focus: var(--blue);
 
         --fc-rating-pill: var(--orange);
         --fc-title: var(--white);

@@ -8,19 +8,19 @@ export const DOMElements = {
   },
 
   get form() {
-    return this.ratingSection.querySelector("form");
+    return this.ratingSection?.querySelector("form");
   },
 
   get selectedRatingText() {
-    return this.thankYouSection.querySelector("#selected-rating");
+    return this.thankYouSection?.querySelector("#selected-rating");
   },
 
   get ratingInputs() {
-    return this.form.querySelectorAll(".rating-input");
+    return this.form?.querySelectorAll(".rating-input");
   },
 
   get submitButton() {
-    return this.form.querySelector("button[type='submit']");
+    return this.form?.querySelector("button[type='submit']");
   },
 };
 

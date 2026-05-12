@@ -7,4 +7,9 @@
         opacity: 0.5;
         cursor: not-allowed;
     }
+
+    .button:focus-visible {
+        outline: 0.1875em solid var(--outline-rating-option-focus);
+        outline-offset: 0.25em;
+    }
 }

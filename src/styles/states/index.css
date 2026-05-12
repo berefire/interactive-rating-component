@@ -2,4 +2,5 @@
 
 @import "@states/button.states.css";
 @import "@states/rate-selector.states.css";
+@import "@states/card.states.css";
 @import "@states/visibility.css";
