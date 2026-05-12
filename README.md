@@ -1,6 +1,19 @@
 # Frontend Mentor - Interactive rating component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+![GitHub last commit](https://img.shields.io/github/last-commit/berefire/interactive-rating-component)
+![Repo size](https://img.shields.io/github/repo-size/berefire/interactive-rating-component)
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+[![Frontend Mentor](https://img.shields.io/badge/Frontend%20Mentor-3e54a3?style=for-the-badge&logo=frontendmentor&logoColor=white)](https://www.frontendmentor.io/)
+[![Vite](https://img.shields.io/badge/Vite-Build%20Tool-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev)
+![Semantic HTML](https://img.shields.io/badge/Semantic%20HTML-ff9800?style=for-the-badge)
+![Accessibility](https://img.shields.io/badge/Accessibility-A11Y-0052cc?style=for-the-badge)
+![Responsive Layout](https://img.shields.io/badge/Responsive%20Layout-Full%20Support-blue?style=for-the-badge)
+![Mobile First](https://img.shields.io/badge/Mobile--First-Design-orange?style=for-the-badge)
+
+This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -8,7 +21,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
+- [My process](#️my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -17,9 +30,9 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
+---
 
-## Overview
+## 📖Overview
 
 ### The challenge
 
@@ -30,95 +43,173 @@ Users should be able to:
 - Select and submit a number rating
 - See the "Thank you" card state after submitting a rating
 
-### Screenshot
+---
 
-![](./screenshot.jpg)
+### 📸Screenshot
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+#### Mobile (375x914)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+| _Default_ | _Active_ | _Thank you Message_ |
+| --------- | -------- | ------------------- |
+| ![Mobile](./screenshots/mobile.png) | ![Mobile Active](./screenshots/mobile-active.png) | ![Mobile Message](./screenshots/mobile-message.png) |
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
+#### Tablet (768x914)
 
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+| _Default_ | _Active_ | _Thank you Message_ |
+| --------- | -------- | ------------------- |
+| ![Tablet](./screenshots/tablet.png) | ![Tablet Active](./screenshots/tablet-active.png) | ![Tablet Message](./screenshots/tablet-message.png) |
 
-### Links
+#### Desktop (1024x914)
+
+| _Default_ | _Active_ | _Thank you Message_ |
+| --------- | -------- | ------------------- |
+| ![Desktop](./screenshots/desktop.png) | ![Desktop Active](./screenshots/desktop-active.png) | ![Desktop Message](./screenshots/desktop-message.png) |
+
+---
+
+### 🔗Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://berefire.github.io/interactive-rating-component/](https://berefire.github.io/interactive-rating-component/)
 
-## My process
+---
 
-### Built with
+## ⚙️My process
+
+### 🛠Built with
 
 - Semantic HTML5 markup
+- Modern CSS architecture (CUBE CSS inspired)
 - CSS custom properties
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- Vainilla JavaScript (ES Modules)
+- Accessible form patterns
+- Modular JavaScript architecture
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+---
 
-### What I learned
+### Accessibility Features
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+This project was built with accessibility in mind:
 
-To see how you can add code snippets, see below:
+- Semantic landmarks (`main`, `section`, `form`, `fieldset`, `legend`)
+- Accessible radio group structure
+- Keyboard-friendly interactions
+- Visible focus states
+- Screen reader support
+- Decorative images hidden from assistive technologies
+- Proper button disabled states
+- Accessible animated state transitions
+- `aria-live` support for dynamic content updates
+
+---
+
+### Architecture
+
+The project follows a modular structure separating concerns between:
+
+- DOM utilities
+- UI state management
+- Event handling
+- Animations
+- Component logic
+
+Example structure
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+src/
+├── js/
+│   ├── utils/
+│   ├── components/
+│   ├── ui.js
+│   └── main.js
+│
+└── styles/
+   ├── base/
+   ├── compositions/
+   ├── utilities/
+   ├── states/
+   └── blocks/
+   └── main.css
+   
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
+
+---
+
+### 💡What I learned
+
+While building this project, I improved my understanding of:
+
+- Accessible form controls
+- Focus management
+- DOM state synchronization
+- CSS state-driven animations
+- Modular JavaScript architecture
+- Managing UI transitions with async logic
+- Structuring scalable CSS systems
+
+One of the most interesting parts was creating sequential UI transitions between the rating card and thank-you card using reusable animation helpers.
+
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+export function show(element) {
+  element.hidden = false;
+
+  requestAnimationFrame(() => {
+    element.classList.remove("is-hidden");
+    element.classList.add("is-visible");
+  });
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+---
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+### 🚀Continued development
 
-### Continued development
+In future projects I would like to continue improving:
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+- Accessibility testing workflows
+- Advanced animation systems
+- Scalable component architecture
+- State management patterns
+- Performance optimization
+- Automated accessibility auditing
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+---
 
-### Useful resources
+### 📚Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [MDN Web Docs](https://developer.mozilla.org/es/) - excellent reference for HTML, CSS, and JavaScript
+- [WebAIM](https://webaim.org/) - accessibility guidelines and contrast checking
+- [Frontend Mentor](https://www.frontendmentor.io) - real-world frontend challenges and design files
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+---
 
-### AI Collaboration
+### 🤖AI Collaboration
 
-Describe how you used AI tools (if any) during this project. This helps demonstrate your ability to work effectively with AI assistants.
+AI tools were used during development to:
 
-- What tools did you use (e.g., ChatGPT, Claude, GitHub Copilot)?
-- How did you use them (e.g., debugging, generating boilerplate, brainstorming solutions)?
-- What worked well? What didn't?
+- Review accessibility decisions
+- Improve semantic HTML structure
+- Refactor JavaScript modules
+- Explore animation patterns
+- Validate architectural decisions
+- Improve maintainability and readability
 
-**Note: Delete this note and the content above if you didn't use AI, or replace with your own experience.**
+The collaboration was especially helpful for discussing scalable frontend architecture patterns and accessibility best practices.
 
-## Author
+---
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+## 👤Author
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Frontend Mentor - [@berefire](https://www.frontendmentor.io/profile/berefire)
+- GitHub - [@berefire](https://github.com/berefire)
 
-## Acknowledgments
+---
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+## 🙏Acknowledgments
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+Thanks to Frontend Mentor for providing practical challenges that help developers improve real-world frontend skills.
+
+---
