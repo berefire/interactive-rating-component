@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <meta name="author" content="Berefire">
+  <meta name="description"
+    content="Interactive rating component challenge from Frontend Mentor. Built with HTML, CSS and JavaScript.">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/interactive-rating-component/assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+
+  <script type="module" crossorigin src="/interactive-rating-component/assets/index-BJadTWvg.js"></script>
+  <link rel="stylesheet" crossorigin href="/interactive-rating-component/assets/index-Bmk07TCV.css">
+</head>
+
+<body>
+  <main class="cover">
+    <h1 class="sr-only">Interactive Rating Component</h1>
+    <section class="rating-form box--form fade is-visible" aria-labelledby="rating-title">
+      <form class="cluster--form">
+        <!-- Rating state start -->
+        <div class="icon-circle">
+          <img class="icon" src="/interactive-rating-component/assets/images/icon-star.svg" height="16" width="17" aria-hidden="true">
+        </div>
+
+
+
+        <div class="stack--text-form">
+
+          <h2 id="rating-title">How did we do?</h2>
+
+          <p class="rating-description">Please let us know how we did with your support request. All feedback is
+            appreciated to help us improve our offering!</p>
+
+          <fieldset class="rating-group">
+            <legend class="sr-only">
+              Select a rating between 1 and 5.
+            </legend>
+
+            <div class="rating-options">
+              <label>
+                <input class="rating-input" type="radio" name="rating" value="1" required>
+                <span class="rating-option--visual">1</span>
+              </label>
+
+              <label>
+                <input class="rating-input" type="radio" name="rating" value="2">
+                <span class="rating-option--visual">2</span>
+              </label>
+
+              <label>
+                <input class="rating-input" type="radio" name="rating" value="3">
+                <span class="rating-option--visual">3</span>
+              </label>
+
+              <label>
+                <input class="rating-input" type="radio" name="rating" value="4">
+                <span class="rating-option--visual">4</span>
+              </label>
+
+              <label>
+                <input class="rating-input" type="radio" name="rating" value="5">
+                <span class="rating-option--visual">5</span>
+              </label>
+            </div>
+
+          </fieldset>
+
+        </div>
+
+
+        <button class="button" type="submit" disabled>
+          Submit
+        </button>
+
+        <!-- Rating state end -->
+      </form>
+
+    </section>
+
+    <section class="card thank-you box--card cluster--card fade is-hidden" aria-labelledby="thank-you-title" aria-live="polite" hidden tabindex="-1">
+      <!-- Thank you state start -->
+      <img class="thank-you__image" src="/interactive-rating-component/assets/images/illustration-thank-you.svg" height="96" width="144" alt="" aria-hidden="true">
+
+      <p class="rating-pill"><span id="selected-rating"></span></p>
+
+      <div class="thank-you-content stack--text-card">
+        <h2 id="thank-you-title">Thank you!</h2>
+
+        <p class="text-muted">We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+
+        <!-- Thank you state end -->
+      </div>
+
+    </section>
+
+
+
+  </main>
+  <footer class="attribution">
+    Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+      rel="noopener noreferrer" aria-label="Frontend Mentor (opens in a new tab)">Frontend Mentor <span
+        aria-hidden="true" class="external-icon">🔗</span></a>.
+    Coded by <a class="link" target="_blank" rel="noopener noreferrer" aria-label="Author (opens in a new tab)"
+      href="#">Berefire</a>.
+  </footer>
+</body>
+
+</html>
